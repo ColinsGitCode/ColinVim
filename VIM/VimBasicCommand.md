@@ -50,6 +50,9 @@
    - **< or >** : 左右缩进
    - **=** ：自动缩进（很好用）
 
+## 分屏操作
+- **Ctrl-H,J,K,L** : 上下左右进行分屏切换
+
 ## 多文件编辑
 - **:bn or :bp** :
   同时打开多个文件，使用这两个命令来切换下一个或者上一个文件,或者使用（**:n or
@@ -70,6 +73,17 @@
 
 ## 外界交互
 - **:shell** : 暂时进入shell, 当输入exit的时候退出
+
+
+## Shortcuts for MyVim
+- **,ee** : 快速打开 ```~/.vimrc```
+- **,sc** : 快速打开vim 快捷键和配置说明
+- **za or space** : 折叠代码
+
+
+
+
+
 
 
 ## Vbundle Plugin Managers
@@ -97,3 +111,15 @@
    - ```:PluginInstall <plugin-name>``` : 安装指定的插件
    - ```:PluginClean``` : 清理闲置的插件
    - ```:PluginSearch <text-list>``` : 插件搜索H
+
+## NERDTree 操作
+- **F2** : 打开或关闭文件目录
+
+## Tagbar 操作
+- **F3** : 打开或关闭
+
+## YCM (YouCompleteMe) 操作
+- **Tab, Ctrl-p, Ctrl-n** : 上下选择提示的选项
+
+## ctrlp 操作
+- **Ctrl-p** ：Normal模式下进行搜索 
