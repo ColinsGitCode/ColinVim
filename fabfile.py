@@ -1,7 +1,8 @@
 from fabric.api import local
 
 def git_add():
-    local("git add * ")
+    local("git add -A ")
+    #local("git add * ")
 
 def git_commit(des = "default descriptions"):
     cmd = "git commit -m \"" + des + "\""
