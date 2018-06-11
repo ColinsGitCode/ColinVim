@@ -21,7 +21,7 @@ def push(des = "default descriptions", head = "master"):
 def pull(head = "master"):
     cmd = "git pull origin " + head
     local(cmd)
-    local("cp VIMRC ~/vimrc")
+    local("cp VIMRC ~/.vimrc")
 
 
     
