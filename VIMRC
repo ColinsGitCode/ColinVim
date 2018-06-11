@@ -26,6 +26,14 @@ set clipboard=unnamed
 " filetypes
 filetype plugin indent on 
 
+" *********************************************
+" 文件buffer的切换配置 
+" *********************************************
+" 切换到下一个buffer
+map <silent> <leader>bn :bn<cr>
+" 切换到上一个buffer
+map <silent> <leader>bp :bp<cr>
+
 
 
 " *********************************************
