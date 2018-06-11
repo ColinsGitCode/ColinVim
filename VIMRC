@@ -15,6 +15,8 @@ let mapleader = ","
 map <silent> <leader>ss :source ~/.vimrc<cr>
 "Fast editing of .vimrc
 map <silent> <leader>ee :e ~/.vimrc<cr>
+"Fast editing of Vim Shortcuts files
+map <silent> <leader>sc :e ~/GitHubFiles/ColinVim/VIM/VimBasicCommand.md<cr>
 "When .vimrc is edited, reload it
 autocmd! bufwritepost .vimrc source ~/.vimrc
 " 支持UTF-8编码
