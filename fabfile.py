@@ -1,8 +1,7 @@
 from fabric.api import local
 
 def git_add():
-    local("rm -rf __pycache__")
-    local("git add * --all")
+    local("git add * ")
 
 def git_commit(des = "default descriptions"):
     cmd = "git commit -m \"" + des + "\""
@@ -18,13 +17,12 @@ def push(des = "default descriptions", head = "master"):
     git_add()
     git_commit(des)
     git_push(head)
-    local("rm -rf __pycache__")
 
 def pull(head = "master"):
     cmd = "git pull origin " + head
     local(cmd)
     local("cp VIMRC ~/.vimrc")
-    local("rm -rf __pycache__")
+#    local("rm -rf __pycache__")
 
 
     
