@@ -1,6 +1,7 @@
 from fabric.api import local
 
 def git_add():
+    local("rm -rf __pycache__")
     local("git add * --all")
 
 def git_commit(des = "default descriptions"):
