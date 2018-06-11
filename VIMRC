@@ -51,28 +51,33 @@ colorscheme Tomorrow-Night
 " *********************************************
 " Vbundle插件管理                
 " *********************************************
-set nocompatible              " required
+set nocompatible              " required 这是必须的
 filetype off                  " required 
    
 " set the runtime path to include Vundle and initialize
+" 在此设置vbundle运行时的路径
 set rtp+=~/.vim/bundle/Vundle.vim
+" 初始化vbundle
 call vundle#begin()        
  
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
  
 " let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'  " 始终应该是第一个
 Plugin 'flazz/vim-colorschemes'
-Plugin 'gmarik/Vundle.vim' 
 Plugin 'majutsushi/tagbar'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'kien/ctrlp.vim'
+"Plugin 'wahidrahim/resize-font'
+"Plugin 'thinca/vim-fontzoom'
 "Plugin 'klen/repo-vim'
 " Add all your plugins here (note older versions of Vundle used Bundle instead of Plugin)
 " All of your Plugins must be added before the following line                 
+" 每个插件都已经在这一行之前
 call vundle#end()            " required
 filetype plugin indent on    " required
 
@@ -165,6 +170,7 @@ let g:ycm_key_list_previous_completion = ['<S-TAB>', '<c-p>', '<Up>']
 let g:airline_powerline_fonts = 1
 " 使用powerline包装过的字体
 set guifont=Source\ Code\ Pro\ for\ Powerline:h14
+let g:airline#extensions#tabline#enabled = 1
 
 
 
@@ -191,8 +197,10 @@ au BufNewFile,BufRead *.js, *.html, *.css set tabstop=2|set softtabstop=2|set sh
 
 
 " **********************************************
-" The END
+" Change Font Size / wahidrahim/resize-font
 " **********************************************
+"map <F10> :ResizeFontSmaller<CR>
+"map <F9> :ResizeFontBigger<CR>
 
 
 
