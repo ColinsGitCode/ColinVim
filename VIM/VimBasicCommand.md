@@ -70,3 +70,30 @@
 
 ## 外界交互
 - **:shell** : 暂时进入shell, 当输入exit的时候退出
+
+
+## Vbundle Plugin Managers
+- 插件配置格式
+   - ```Plugin 'user/plugin'```
+    - 从Github上进行安装
+
+   - ```Plugin 'plugin_name```
+    - 从http://vim-scripts.org/vim/scripts.html上进行安装
+
+   - ```Plugin 'git://git.another_repo.com/plugin'```
+    - 从另一个git软件库进行安装
+
+   - ```Plugin 'file://home/user/path/to/plugin'```
+    - 从本地文件夹进行安装
+   
+   - ```Plugin 'rstacruz/sparkup',{'rtp':'another_vim_path'}```
+    - 指定其他的参数，比如插件运行的路径，如果是自己在编写插件，或者想从不是```~/.vim```的另一个文件夹来安装它
+
+   - ```Plugin 'User/plugin',{'name':'newPlugin'}
+    - 存在同名插件的情况下，可以更名插件，这样就不会冲突了
+
+- 常用插件管理命令
+   - ```:PluginInstall``` : 安装所有的插件
+   - ```:PluginInstall <plugin-name>``` : 安装指定的插件
+   - ```:PluginClean``` : 清理闲置的插件
+   - ```:PluginSearch <text-list>``` : 插件搜索H
