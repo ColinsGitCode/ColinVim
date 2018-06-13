@@ -12,7 +12,7 @@ set cursorline
 " 设置leader键
 let mapleader = ","
 "Fast reloading of the .vimrc
-map <silent> <leader>ss :source ~/.vimrc<cr>
+" map <silent> <leader>ss :source ~/.vimrc<cr>
 "Fast editing of .vimrc
 map <silent> <leader>ee :e ~/.vimrc<cr>
 "Fast editing of Vim Shortcuts files

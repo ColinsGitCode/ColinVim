@@ -24,6 +24,7 @@
 - **Ctl-u** : 屏幕向上移动半页
 - **Ctl-f** : 屏幕向下移动一页
 - **Ctl-b** : 屏幕向上移动一页
+- **Ctl-o** : 光标移动到上次编辑的位置
 
 ## 删除命令
 - **x** : 删除光标后面的字符
@@ -66,6 +67,7 @@
 ## 打开，保存，退出
 - **:e path** : 打开一个文件
 - **:w** : 存储
+- **:wa or :wall** : 存储所有的文件
 - **:saveas path** : 另存为
 - **:x or :wq** : 保存并退出
 - **ZZ** : 保存并退出
@@ -113,7 +115,15 @@
    - ```:PluginSearch <text-list>``` : 插件搜索H
 
 ## NERDTree 操作
+### 快捷键
 - **F2** : 打开或关闭文件目录
+
+### Global Commands
+
+
+ 
+#### Plugin Features
+
 
 ## Tagbar 操作
 - **F3** : 打开或关闭
@@ -125,3 +135,4 @@
 - **Ctrl-p** ：Normal模式下进行搜索 
 
 # The END
+## Thank you for reading!
