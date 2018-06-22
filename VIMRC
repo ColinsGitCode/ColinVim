@@ -98,7 +98,7 @@ filetype plugin indent on    " required
 
 
 " *********************************************
-" 分割布局相关
+" split 分割布局相关
 " *********************************************
 set splitbelow
 set splitright
@@ -108,6 +108,7 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
+" 触发winteract 分屏管理插件
 nmap <leader>gw :InteractiveWindow<CR>
 
 
