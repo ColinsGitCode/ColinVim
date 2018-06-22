@@ -83,6 +83,7 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'kien/ctrlp.vim'
+Plugin 'romgrk/winteract.vim'
 "Plugin 'wahidrahim/resize-font'
 "Plugin 'thinca/vim-fontzoom'
 "Plugin 'klen/repo-vim'
@@ -107,6 +108,7 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
+nmap <leader>gw :InteractiveWindow<CR>
 
 
 
