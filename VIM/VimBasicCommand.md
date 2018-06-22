@@ -119,6 +119,20 @@
 - **F2** : 打开或关闭文件目录
 
 ### Global Commands
+- **:NERDTree <dirs_paths/bookmark>** : 打开一个新的Tree，根节点自己制定目录或书签，默认为当前目录
+- **:NERDTreeCWD** : 当前目录为根目录，并打开一个新的Tree.
+
+### Bookmarks
+- **:Bookmark <name>** : 为当前文件或目录设置标签名，没有指定名称则为本来的文件名或者目录名
+- **:BookmarkToRoot <name>**  : 使用该标签作为新的根目录并打开一个Tree
+- **:OpenBookmark <name>** : 打开一个标签（必须指定为文件）
+- **:ClearBookmarks <name>** : 删除标签，没有指定，则删除该节点上的所有标签
+- **:ClearAllBookmarks** : 删除所有的标签
+#### 注意处理无效书签，它和有效书签之间会被一行空格隔开
+
+### ShortCuts
+
+
 
 
  
