@@ -27,6 +27,11 @@ set clipboard=unnamed
 filetype plugin indent on 
 
 " *********************************************
+" 快捷键配置
+" *********************************************
+imap <C-e> <Esc>
+
+" *********************************************
 " 文件buffer的切换配置 
 " *********************************************
 " 切换到下一个buffer
@@ -84,6 +89,8 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'kien/ctrlp.vim'
 Plugin 'romgrk/winteract.vim'
+"Plugin 'scrooloose/syntastic'
+"Plugin 'joonty/vim-do.git'
 "Plugin 'wahidrahim/resize-font'
 "Plugin 'thinca/vim-fontzoom'
 "Plugin 'klen/repo-vim'
@@ -211,11 +218,16 @@ au BufNewFile,BufRead *.js, *.html, *.css set tabstop=2|set softtabstop=2|set sh
 
 
 " **********************************************
-" Change Font Size / wahidrahim/resize-font
+" Syntastic 配置相关
 " **********************************************
-"map <F10> :ResizeFontSmaller<CR>
-"map <F9> :ResizeFontBigger<CR>
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
 
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 
 
 
