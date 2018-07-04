@@ -25,6 +25,10 @@ else
     let g:OS#gui = 0
 endif
 
+"置粘贴模式，这样粘贴过来的程序代码就不会错位了。
+set paste 
+"设置帮助信息 
+set helplang=cn 
 " 显示行号
 " set number
 " 设置相对行号
@@ -33,6 +37,16 @@ set relativenumber
 syntax on
 " 突出显示当前行
 set cursorline
+           
+" 突出显示当前列
+set cursorcolumn
+
+"设置命令行的高度
+set cmdheight=2
+"高亮搜索的关键字
+set hlsearch
+"增强模式中的命令行自动完成操作
+set wildmenu
 " 设置leader键
 let mapleader = ","
 "Fast reloading of the .vimrc
@@ -78,8 +92,8 @@ let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 set t_Co=256
 set background=dark
 "colorscheme solarized
-colorscheme desert
-"colorscheme molokai
+"colorscheme desert
+colorscheme molokai
 "colorscheme Tomorrow-Night
 
 
@@ -113,6 +127,8 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'kien/ctrlp.vim'
 Plugin 'romgrk/winteract.vim'
+Plugin 'Yggdroot/indentLine'
+
 "Plugin 'scrooloose/syntastic'
 "Plugin 'joonty/vim-do.git'
 "Plugin 'wahidrahim/resize-font'
@@ -244,14 +260,14 @@ au BufNewFile,BufRead *.js, *.html, *.css set tabstop=2|set softtabstop=2|set sh
 " **********************************************
 " Syntastic 配置相关
 " **********************************************
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+"set statusline+=%#warningmsg#
+"set statusline+=%{SyntasticStatuslineFlag()}
+"set statusline+=%*
 
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
+"let g:syntastic_always_populate_loc_list = 1
+"let g:syntastic_auto_loc_list = 1
+"let g:syntastic_check_on_open = 1
+"let g:syntastic_check_on_wq = 0
 
 
 

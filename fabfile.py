@@ -25,5 +25,13 @@ def pull(head = "master"):
     local("cp VIMRC ~/.vimrc")
 #    local("rm -rf __pycache__")
 
+def TestIndecient():
+    cmd = 1
+    for I in range(100):
+        vi = 2
+        vi = 3
+        vi = 4
+        pass
+    return True
 
     
