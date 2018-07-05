@@ -182,7 +182,12 @@
 - Client-Server Architecture
   
 ### Commands
-- 
+- ```:YcmRestartServer``` : Restart the ycmd completion server
+- ```:YcmForceCompileAndDiagnostic``` : Recompile the current files
+
+### Options Configurations
+- 在修改相关配置之后需要执行 ```:YcmRestartServer``` 重启ycmd服务器来是配置生效
+####
 
 ### YCM (YouCompleteMe) 操作
 - **Tab, Ctrl-p, Ctrl-n** : 上下选择提示的选项
