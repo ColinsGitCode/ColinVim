@@ -171,7 +171,20 @@
 ## Tagbar 操作
 - **F3** : 打开或关闭
 
-## YCM (YouCompleteMe) 操作
+## YCM 相关
+### General Usage
+- 如果都是小写的输入，则不区分大小写(case-insensitive), 如果有大写字母则为区分大小写的情况
+- 用TAB依次选择备选项，ctrl-n ctrl-p上下选择，Shift-TAB为倒序选择备选项
+   - 如果是console vim 的话，可能会失效，可以配置为其他按键
+   - 目前TAB键失效，必须重新配置
+   - Server端出现preview选项会乱码，考虑禁用preview框体
+- Several Complemetation Engines and Sementic Engines inside the YCM
+- Client-Server Architecture
+  
+### Commands
+- 
+
+### YCM (YouCompleteMe) 操作
 - **Tab, Ctrl-p, Ctrl-n** : 上下选择提示的选项
 
 ## ctrlp 操作
