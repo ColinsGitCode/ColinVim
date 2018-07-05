@@ -31,6 +31,9 @@ def TestIndecient():
         vi = 2
         vi = 3
         vi = 4
+        pull.func_name
+
+
         
         pass
     return True
