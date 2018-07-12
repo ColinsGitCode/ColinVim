@@ -39,7 +39,7 @@ syntax on
 set cursorline
            
 " 突出显示当前列
-set cursorcolumn
+" set cursorcolumn
 
 "设置命令行的高度
 set cmdheight=2
@@ -92,9 +92,9 @@ let &t_EI = "\<Esc>]50;CursorShape=0\x7"
 set t_Co=256
 set background=dark
 "colorscheme solarized
-"colorscheme desert
+" colorscheme desert
 colorscheme molokai
-"colorscheme Tomorrow-Night
+" colorscheme Tomorrow-Night
 
 
 
@@ -129,6 +129,8 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'romgrk/winteract.vim'
 Plugin 'Yggdroot/indentLine'
 Plugin 'EasyGrep'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'terryma/vim-multiple-cursors'
 
 "Plugin 'scrooloose/syntastic'
 "Plugin 'joonty/vim-do.git'
@@ -283,16 +285,29 @@ au BufNewFile,BufRead *.js, *.html, *.css set tabstop=2|set softtabstop=2|set sh
 
 
 " **********************************************
+" NERDCommenter 注释配置相关
+" **********************************************
+let g:NERDSpaceDelims=1
+
+" **********************************************
+" vim_multiple_cursors 配置相关
+" **********************************************
+let g:multi_cursor_use_default_mapping=0
+let g:multi_cursor_next_key='<C-n>'
+let g:multi_cursor_prev_key='<C-m>'
+let g:multi_cursor_skip_key='<C-x>'
+let g:multi_cursor_quit_key='<Esc>'
+" **********************************************
 " Syntastic 配置相关
 " **********************************************
-"set statusline+=%#warningmsg#
+" set statusline+=%#warningmsg#
 "set statusline+=%{SyntasticStatuslineFlag()}
 "set statusline+=%*
 
-"let g:syntastic_always_populate_loc_list = 1
-"let g:syntastic_auto_loc_list = 1
-"let g:syntastic_check_on_open = 1
-"let g:syntastic_check_on_wq = 0
+" let  g:syntastic_always_populate_loc_list = 1
+"let  g:syntastic_auto_loc_list = 1
+"let  g:syntastic_check_on_open = 1
+"let  g:syntastic_check_on_wq = 0
 
 
 

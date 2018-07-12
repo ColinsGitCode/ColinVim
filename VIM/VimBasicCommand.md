@@ -215,7 +215,22 @@
 
 - **n/p or Tab** : 切换buffer
 
+## nerdcommenter 插件操作
+- **,cc** : 注释选中的行
+- **,cu** : 取消注释
+- **,c<space>** : 智能注释或者取消注释
+- **,cy** : 注释+复制
 
+## EasyGrep 插件
+- 详细使用方式需要仔细阅读教程
+- **:Grep -ir word** : 递归目录而且不区分大小写的全局搜索
+
+## Vim_mutilple_cursors 插件
+1. **C-n** 选中光标所在的字符
+2. **C-n** 向下匹配一个字符
+3. **C-p** 向上匹配一个字符
+4. **C-x** 跳过一个字符
+5. **Esc** 退出多行光标操作
 
 # The END
 ## Thank you for reading!
